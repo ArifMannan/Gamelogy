@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+/*----------
+    body 
+ -----------*/
+
+html,
+body {
+  background-color: rgba(42, 158, 42, 0.281);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------
+  animation 
+  ---------------*/
+
+/*----------------
+      header 
+------------------*/
+.top-nav {
+  padding: 1%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: solid 10px rgba(14, 170, 14, 0.431);
+  border-radius: 10px;
+}
+
+.top-nav li {
+  display: inline-block;
+  padding-left: 30px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+a:hover {
+  color: rgb(25, 221, 221);
+}
+header {
+  width: 100vw;
+  background-color: black;
+}
+.home {
+  display: flex;
+}
+.title-and-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+  animation: slide-right 3s ease-in 0.2s 1 forwards;
+}
+.half-width {
+  width: 50vw;
+  display: flex;
+}
+.main-title {
+  font-size: 3.5rem;
+  color: white;
+  margin: 20% 0 5% 20%;
+}
+.primary-button {
+  background-color: rgb(20, 241, 20);
+  color: white;
+  min-width: 100px;
+  width: 20%;
+  margin: 0 0 20% 20%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.image-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.home-image {
+  height: 70%;
+  width: 60%;
+  min-width: 300px;
+  margin: 20% 0 20% 0%;
+  transition: transform 0.5s ease-out;
+  z-index: 2;
+}
+.primary-button:hover {
+  transform: scale(110%, 110%);
+}
+
+/*---------------
+         main 
+  -----------------*/
+/*----------------------
+ prothome babsi jeta ase setai diye banai website , pore bablam na diffrent kisr kori. sei jonno player likha. --sorry---
+ -------------------------
+   player-profile section
+   ---------------------- */
+.player-card-section {
+  margin-top: 70px;
+  padding-left: 130px;
+  padding-right: 160px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+.card-player {
+  width: 330px;
+  height: 474px;
+  margin: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.card-details {
+  padding: 15px;
+  width: 300px;
+  height: 426px;
+}
+
+.card-details img {
+  width: 300px;
+  height: 256px;
+}
+
+.card-details h1 {
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.card-details p {
+  margin: 10px 0px;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+/*-----------------
+ vedio-section 
+ ------------------*/
+.store-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  flex-direction: row;
+  align-items: center;
+}
+.section-title {
+  margin-top: 50px;
+  font-family: "Niconne", cursive;
+  font-size: 72.5806px;
+  color: #10437a;
+  font-weight: 700;
+  text-align: center;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+/*--------------------
+   News letters section 
+ -------------------*/
+.input-box {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.secondary-button {
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: linear-gradient(blue, rgb(124, 122, 255));
+}
+.newsletter-section .details-text {
+  width: 100%;
+}
+.newsletter-section .colored-text {
+  color: blue;
+}
+.newsletters-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+.details-text {
+  font-size: 1.2rem;
+  padding: 20px 10px;
+  margin: 10px;
+  width: 60%;
+  text-align: center;
+}
+.games {
+  display: flex;
+  flex-direction: row;
+}
+.review {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.user-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 16px;
+}
+/* trending section */
+.card {
+  max-width: 20%;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 4px -4px 50px 5px rgba(0, 0, 0, 0.35);
+}
+.image {
+  width: 100%;
+  height: 70%;
+}
+.name {
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 5px 5px;
+}
+
+.button {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+}
+/*----------------
+     footer   
+  ---------------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.logo-position {
+  display: flex;
+  align-items: center;
+}
+.logo-name {
+  font-family: "Niconne", cursive;
+  font-size: 72.5806px;
+  color: #10437a;
+}
+.copyright {
+  display: block;
+  text-align: center;
+}
+.Gamelogy-logo {
+  width: 100px;
+  height: 70px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 25%;
+}
+.fab {
+  font-size: 1.5rem;
+}
+/*--------------------
+     media-queary 
+----------------------*/
+/*---------------------
+ mobile-devive 
+ ----------------------*/
+@media only screen and (max-width: 688px) {
+  .home {
+    flex-direction: column;
+    width: 100%;
+  }
+  .half-width {
+    width: 100%;
+  }
+  .main-title {
+    font-size: 2.5rem;
+    color: white;
+    margin: 20% 0 5% 2%;
+  }
+  .primary-button {
+    margin: 0 0 10% 2%;
+    padding: 10px;
+    border: none;
+  }
+  .image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20% 0;
+  }
+  .image-div > img {
+    height: 70%;
+    width: 70%;
+    min-width: 300px;
+    margin: 0;
+  }
+  .players {
+    display: block;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player-card-section {
+    padding: 0;
+    padding-left: 15px;
+  }
+  .games {
+    flex-direction: column;
+    width: 100%;
+  }
+  .reviews {
+    width: 100%;
+  }
+}
+/* ------------------
+   tablet-devices 
+   ------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    width: 100%;
+  }
+  .half-width {
+    width: 100%;
+  }
+  .main-title {
+    font-size: 2.5rem;
+    color: white;
+    margin: 20% 0 5% 2%;
+  }
+  .primary-button {
+    margin: 0 0 10% 2%;
+    padding: 10px;
+    border: none;
+  }
+  .image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20% 0;
+  }
+  .image-div > img {
+    height: 70%;
+    width: 70%;
+    min-width: 300px;
+    margin: 0;
+  }
+  .players {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player-card-section {
+    padding: 0;
+    padding-left: 12px;
+  }
+  .games {
+    flex-direction: column;
+    width: 100%;
+  }
+  .reviews {
+    width: 100%;
+  }
+}
+/* thank you very much */
